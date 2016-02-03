@@ -1,10 +1,10 @@
 (ns hello-web.handler
-  (:require [compojure.core :refer [defroutes routes]]
-            [ring.middleware.resource :refer [wrap-resource]]
-            [ring.middleware.file-info :refer [wrap-file-info]]
+  (:require (compojure [core :refer [defroutes routes]]
+                       [handler :as handler]
+                       [route :as route])
+            (ring.middleware [file-info :refer [wrap-file-info]]
+                             [resource :refer [wrap-resource]])
             [hiccup.middleware :refer [wrap-base-url]]
-            [compojure.handler :as handler]
-            [compojure.route :as route]
             [hello-web.routes.home :refer [home-routes]]))
 
 (defn init []
