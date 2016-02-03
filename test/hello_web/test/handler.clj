@@ -1,7 +1,7 @@
 (ns hello-web.test.handler
-  (:use clojure.test
-        ring.mock.request
-        hello-web.handler))
+  (:require [clojure.test :refer :all]
+            [ring.mock.request :refer :all]
+            [hello-web.handler :refer :all]))
 
 (deftest test-app
   (testing "main route"

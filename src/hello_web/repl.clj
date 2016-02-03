@@ -1,7 +1,7 @@
 (ns hello-web.repl
-  (:use hello-web.handler
-        ring.server.standalone
-        [ring.middleware file-info file]))
+  (:require [hello-web.handler :refer :all]
+            [ring.server.standalone :refer :all]
+            [ring.middleware :refer [file-info file]]))
 
 (defonce server (atom nil))
 
