@@ -8,7 +8,8 @@ FROM fruit
 WHERE appearance = :appearance
 
 -- name: clear-fruit!
+-- I am a cool docstring
 DELETE FROM fruit
 
 -- name: create-fruit<!
-INSERT INTO fruit (name, appearance) VALUES(:name, :appearance)
+INSERT INTO fruit (name, appearance) VALUES (:name, :appearance)
