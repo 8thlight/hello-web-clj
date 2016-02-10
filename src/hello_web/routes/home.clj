@@ -3,7 +3,8 @@
             [hello-web.views.layout :as layout]))
 
 (defn home []
-  (layout/common [:h1 "Hello World!"]))
+  (layout/common
+    [:h1 "Welcome To My Database"]))
 
 (defroutes home-routes
   (GET "/" [] (home)))

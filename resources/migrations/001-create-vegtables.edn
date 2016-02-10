@@ -1,0 +1,2 @@
+{:up ["CREATE TABLE vegetables (id int, name varchar(20), taste text)"]
+ :down ["DROP TABLE vegetables"]}
