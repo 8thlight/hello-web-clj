@@ -21,6 +21,10 @@ $ tree
 │   └── public
 │       └── css
 │           └── screen.css
+├── spec
+│   └── hello_web
+        └── spec
+            └── handler_spec.clj
 ├── src
 │   └── hello_web
 │       ├── handler.clj
@@ -29,10 +33,6 @@ $ tree
 │       │   └── home.clj
 │       └── views
 │           └── layout.clj
-└── test
-    └── hello_web
-        └── test
-            └── handler.clj
 ```
 
 <table>
@@ -57,7 +57,7 @@ $ tree
   <td>HTML templates written in Hiccup live in this folder.  See `views/layout.clj` as an example.</td>
 </tr>
 </table>
- 
+
 
 ## Running
 
@@ -69,8 +69,11 @@ This command should open a browser for you.  If it doesn't, the web server shoul
 
 To run the tests for the project, run:
 
-    lein test
+    lein spec
 
+To run them continuously, run:
+
+    lein spec -a
 
 ## License
 
