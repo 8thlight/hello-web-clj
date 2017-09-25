@@ -5,9 +5,9 @@
 
 (describe "Testing the web app"
 
-  (it "GET '/' should say Hello World."
+  (it "GET '/' should say Dear 8th Light."
       (let [response (app (request :get "/"))]
-        (should (.contains (:body response) "Hello World"))
+        (should (.contains (:body response) "Dear 8th Light,"))
         (should= 200 (:status response))))
 
   (it "GET '/invalid' should say Not Found"
